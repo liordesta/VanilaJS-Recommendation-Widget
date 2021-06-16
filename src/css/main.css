@@ -1,0 +1,135 @@
+/* Page Container CSS */
+.page__container {
+  padding: 5px;
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+/* Header CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ced4da;
+  position: relative;
+}
+.header > span {
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header .taboola__feed {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.header .taboola__feed > img {
+  height: 12px;
+}
+
+/* Loader CSS */
+#loading {
+  background-image: url('../img/spinner.gif');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+/* Recommendation Widget CSS */
+#recommendation__widget {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item__container {
+  width: 32%;
+  margin: 10px 0;
+}
+
+.linkWrapper {
+  text-decoration: none;
+  color: black;
+}
+.linkWrapper:hover {
+  text-decoration: underline;
+}
+
+.thumbnail {
+  padding-bottom: 50%;
+  background-size: cover;
+}
+
+.title {
+  display: block;
+  font-family: Arial;
+  line-height: 21px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.branding {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial;
+  line-height: 22px;
+}
+
+.category {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #fff;
+  background-color: #054164;
+  border: 0;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Arial;
+  line-height: 22px;
+}
+
+.seperator {
+  display: inline-block;
+  border-left: 1px solid #4e4a4a;
+  width: 11px;
+  height: 11px;
+  margin-left: 9px;
+}
+
+/* '...' Implementation CSS */
+.title {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  padding-right: 1em;
+}
+.title:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.title:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 576px) {
+  .item__container {
+    width: 100%;
+  }
+}

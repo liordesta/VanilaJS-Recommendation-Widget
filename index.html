@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset='UTF-8'>
+<title>Football News</title>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='author' content='Football News'>
+<meta name='description' content='Latest football news from around the world'>
+<link rel='shortcut icon' href='./favicon.ico'>
+<link rel='stylesheet' href='./src/css/main.css'>
+
+<body>
+    <div class='page__container'>
+        <div class='header'>
+            <span>From The Web</span>
+            <a class='taboola__feed' href='https://www.taboola.com/about/our-story' target='_blank'>
+                <img src='http://cdn.taboola.com/static/f8/f89e1763-220d-4e09-ba69-9e040548fb7a.svg' alt='Taboola Feed'>
+            </a>
+        </div>
+
+        <div id='loading'></div>
+        <div id='recommendation__widget'>
+        </div>
+
+    </div>
+    <script src='./src/js/main.js'></script> <!-- Here because html load top to buttom, we load our JS after HTML loads -->
+</body>
+
+</html>
