@@ -133,3 +133,12 @@
     width: 100%;
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header .taboola__feed {
+    width: 84px;
+  }
+  .header .taboola__feed > img {
+    border: 0;
+  }
+}

@@ -44,17 +44,17 @@ function createItemElement(item) {
   linkWrapper.href = item.url;
   linkWrapper.target = '_blank';
 
-  infoContainer.append(title);
-  infoContainer.append(branding);
+  infoContainer.appendChild(title);
+  infoContainer.appendChild(branding);
   if (item.categories && item.categories.length > 0) {
     category.innerText = item.categories[0];
-    infoContainer.append(seperator);
-    infoContainer.append(category);
+    infoContainer.appendChild(seperator);
+    infoContainer.appendChild(category);
   }
-  linkWrapper.append(thumbnail);
-  linkWrapper.append(infoContainer);
-  itemContainer.append(linkWrapper);
-  widgetContainer.append(itemContainer);
+  linkWrapper.appendChild(thumbnail);
+  linkWrapper.appendChild(infoContainer);
+  itemContainer.appendChild(linkWrapper);
+  widgetContainer.appendChild(itemContainer);
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
